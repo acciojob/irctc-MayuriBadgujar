@@ -19,5 +19,6 @@ public class PassengerController {
     @PostMapping("/create")
     public Integer registerPassenger(@RequestBody Passenger passenger){
         return passengerService.addPassenger(passenger);
+        //return passengerService.registerPassenger(passenger);
     }
 }
